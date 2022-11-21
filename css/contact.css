@@ -1,0 +1,105 @@
+/* CONTACT HEADER */
+#contact-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contact-header > * {
+  margin: 0;
+}
+
+/* ___ CONTACT SECTION ___ */
+
+#contact-section {
+  overflow: auto;
+  position: relative;
+  color: white;
+  background-color: #00000030;
+}
+
+#contact-content {
+  text-align: center;
+}
+
+/* CONTACT MAIN */
+#contact-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*background-color: #f6f6f6;*/
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* CONTACT FORM */
+#contact-form {
+  max-width: 400px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-around;
+  flex: 1;
+}
+
+#contact-form input {
+  min-height: 20px;
+}
+
+#contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+  max-height: 500px;
+}
+
+#contact-form img {
+  padding: 5px;
+  width: 300px;
+  margin: auto;
+}
+
+#contact-form button {
+  width: 100px;
+  margin: auto;
+  margin-top: 10px;
+  font-family: "EB Garamond", serif;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.contact-field {
+  padding: 5px;
+  margin: 5px;
+  font-size: 1.1em;
+  font-family: "EB Garamond", serif;
+  border: 1px grey solid;
+  border-radius: 4px;
+}
+
+select {
+  color: black;
+}
+
+select:invalid {
+  color: rgb(98, 98, 98);
+}
+
+select:invalid option:not(:disabled) {
+  color: black;
+}
+
+/* CONTACT INFO */
+#contact-info {
+  max-width: 400px;
+  flex: 1;
+}
+
+#contact-info > h3 {
+  margin: 0;
+}
+
+#contact-info > h3:not(:first-child) {
+  margin-top: 30px;
+}
+
+#contact-info > p {
+  margin: 0;
+}

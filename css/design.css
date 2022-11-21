@@ -1,0 +1,92 @@
+#design-header {
+  text-align: center;
+  background-color: white;
+  z-index: 100;
+}
+
+#design-header h2 {
+  font-size: 1.8em;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+#design-header p {
+  color: #333333;
+  font-size: 1.1em;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+#design-header hr {
+  margin-bottom: 0;
+}
+
+.design-row {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.design-row hr {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.design-row-content {
+  display: flex;
+  grid-row: 1;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.design-row-background {
+  position: absolute;
+  z-index: -1;
+  left: -50px;
+  right: -50px;
+  top: -5px;
+  bottom: -5px;
+  grid-row: 1;
+  background-position: center center;
+  background-size: cover;
+  filter: blur(3px) brightness(80%);
+}
+
+.design-row-background img {
+  object-fit: cover;
+  width: 100%;
+  background-position: bottom;
+}
+
+.design-row img {
+  flex: 3;
+  min-width: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.odd .design-description {
+  flex: 2;
+  text-align: center;
+  padding-right: 40px;
+}
+
+.even .design-description {
+  flex: 2;
+  text-align: center;
+  padding-left: 40px;
+}
+
+.design-description h3 {
+  color: #053d63;
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+.design-description p {
+  color: #444444;
+  font-size: 1.1em;
+  margin-top: 7px;
+}

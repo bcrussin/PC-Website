@@ -1,0 +1,161 @@
+html {
+  overflow-y: scroll;
+}
+
+body {
+  --max-page-width: 1200px;
+  margin: 0;
+  font-family: "EB Garamond", serif;
+  overflow-x: hidden;
+}
+
+hr {
+  width: 90%;
+}
+
+.pad-content {
+  margin-left: max(20px, calc((100% - var(--max-page-width)) / 2));
+  margin-right: max(20px, calc((100% - var(--max-page-width)) / 2));
+}
+
+.pad-content-padding {
+  padding-left: max(20px, calc((100% - var(--max-page-width)) / 2));
+  padding-right: max(20px, calc((100% - var(--max-page-width)) / 2));
+}
+
+/* NAV SECTION */
+
+#nav-section {
+  margin-bottom: 100px;
+}
+
+#nav-content {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 100;
+}
+
+#navbar {
+  height: 100px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  vertical-align: middle;
+  border-bottom: 1px solid black;
+  transition: height 0.1s linear;
+}
+
+#nav-buttons {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  width: 40%;
+  flex-wrap: wrap;
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+}
+
+.navbar-button::before {
+  display: block;
+  content: attr(title);
+  font-weight: bold;
+  height: 0;
+  overflow: hidden;
+  visibility: visible;
+  background-color: red;
+}
+
+.navbar-button {
+  padding-right: 5px;
+  padding-top: 5px;
+  cursor: pointer;
+  color: #666666;
+  text-decoration: none;
+}
+
+.current-page {
+  color: black;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.navbar-button:hover {
+  color: black;
+}
+
+#logo-title {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  transition: height 0.2s;
+}
+
+#title-subtitle {
+  display: inline;
+  margin-left: 20px;
+}
+
+#title {
+  display: inline;
+  font-weight: bolder;
+  font-family: "EB Garamond", serif;
+  font-size: 2em;
+  margin-bottom: 0;
+  margin-right: 0;
+  font-variant: small-caps;
+  padding-right: 0;
+}
+
+#subtitle {
+  display: inline;
+  font-weight: lighter;
+  font-family: "EB Garamond", serif;
+  font-size: 1.4em;
+  margin-top: 0;
+  margin-left: -2px;
+  font-variant: small-caps;
+  padding-left: 0;
+}
+
+.background-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-image::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px) brightness(70%);
+  pointer-events: none;
+}
+
+/* MISC */
+
+.sticky-header {
+  position: fixed;
+  top: 96px;
+  width: 100%;
+}
+
+.spacer {
+  height: 80px;
+}
