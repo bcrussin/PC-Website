@@ -75,18 +75,19 @@
   margin-top: 0;
 }
 
-#about-interests {
-  flex: 1;
+.about-details {
   background-color: #2d2d2d80;
   padding: 15px;
+}
+
+#about-interests {
+  flex: 1;
   margin-bottom: 20px;
 }
 
 #about-portfolio {
   /*padding-left: 30px;*/
   flex: 1;
-  background-color: #2d2d2d80;
-  padding: 15px;
 }
 
 /* SLIDESHOW SECTION */
