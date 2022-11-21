@@ -109,7 +109,7 @@
   height: 50px;
   transform: translate(0, -50%);
   background-color: #00000060;
-  border-radius: 100%;
+  border-radius: 50%;
   border: none;
   font-size: 2em;
   color: white;
@@ -117,6 +117,10 @@
   font-weight: 900;
   transition: background-color 0.05s;
   z-index: 10;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .slideshow-nav:hover {
