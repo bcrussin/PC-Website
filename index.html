@@ -119,8 +119,10 @@
     </div>
 
     <div id="slideshow-section">
-      <button id="slideshow-left" class="slideshow-nav">&lt;</button>
       <div id="slideshow" class="pad-content">
+        <button id="slideshow-left" class="slideshow-nav" onclick="prevSlide()">
+          &lt;
+        </button>
         <div id="design" class="slideshow-content">
           <div class="slideshow-text">
             <h2 class="slideshow-header">Design Solutions</h2>
@@ -142,8 +144,34 @@
             alt="3D model of a church parking lot"
           />
         </div>
+        <div id="consultation" class="slideshow-content">
+          <div class="slideshow-text">
+            <h2 class="slideshow-header">Consultation Services</h2>
+            <p class="slideshow-description">
+              Create detailed plans for every aspect of your project to make the
+              entire process pain-free and surprise-free.
+            </p>
+            <button
+              class="slideshow-button"
+              onclick="location.href='consultation.html'"
+            >
+              Learn More →
+            </button>
+          </div>
+          <img
+            id="design-preview"
+            class="slideshow-media"
+            src="images/house_construction.jfif"
+          />
+        </div>
+        <button
+          id="slideshow-right"
+          class="slideshow-nav"
+          onclick="nextSlide()"
+        >
+          &gt;
+        </button>
       </div>
-      <button id="slideshow-right" class="slideshow-nav">&gt;</button>
     </div>
 
     <div class="spacer"></div>
@@ -247,5 +275,7 @@
         <hr />
       </div>
     </div>
+
+    <script src="javascript/index.js"></script>
   </body>
 </html>

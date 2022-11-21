@@ -76,7 +76,8 @@
 }
 
 .about-details {
-  background-color: #2d2d2d80;
+  background-color: #2d2d2da0;
+  border-radius: 3px;
   padding: 15px;
 }
 
@@ -94,8 +95,11 @@
 
 #slideshow-section {
   overflow: auto;
+  background-color: #242424;
+}
+
+#slideshow {
   position: relative;
-  background-color: #2d2d2d;
 }
 
 .slideshow-nav {
@@ -112,6 +116,7 @@
   font-family: "Courier New", Courier, monospace;
   font-weight: 900;
   transition: background-color 0.05s;
+  z-index: 10;
 }
 
 .slideshow-nav:hover {
@@ -119,28 +124,32 @@
 }
 
 #slideshow-left {
-  left: max(10px, calc((100% - var(--max-page-width)) / 5));
+  left: -10px;
+  /*left: max(10px, calc((100% - var(--max-page-width)) / 5));*/
 }
 
 #slideshow-right {
-  right: max(10px, calc((100% - var(--max-page-width)) / 5));
+  right: -10px;
+  /*right: max(10px, calc((100% - var(--max-page-width)) / 5));*/
 }
 
 .slideshow-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   overflow: hidden;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 50px;
   padding-right: 50px;
+  height: 400px;
 }
 
 .slideshow-text {
   flex: 0 0 30%;
   text-align: center;
   color: white;
+  z-index: 10;
 }
 
 .slideshow-header {
@@ -168,9 +177,8 @@
 }
 
 .slideshow-media {
-  flex: 0 0 68%;
-  width: 50%;
-  height: 50%;
+  /*flex: 0 0 68%;*/
+  object-fit: contain;
   border: 2px white solid;
   max-height: 400px;
   object-fit: cover;
@@ -179,14 +187,6 @@
 /* Distinct layout for smaller screens */
 
 @media only screen and (max-width: 800px) {
-  .slideshow-media {
-    display: none;
-  }
-
-  .slideshow-text {
-    flex: 1;
-  }
-
   /* ABOUT SECTION */
   #about-content {
     margin-left: 20px;
@@ -214,5 +214,27 @@
   #about-second-row {
     margin-left: 5px;
     margin-right: 5px;
+  }
+
+  /* SLIDESHOW SECTION */
+
+  .slideshow-content {
+    height: 500px;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+
+  .slideshow-text {
+    flex: auto;
+  }
+
+  .slideshow-media {
+    flex: auto;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .slideshow-text {
+    flex: 1;
   }
 }
