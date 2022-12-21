@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Patrick Crusse, PLA</title>
 
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://kenwheeler.github.io/slick/slick/slick-theme.css"
+    />
     <link rel="stylesheet" type="text/css" href="css/common.css" />
     <link rel="stylesheet" type="text/css" href="css/portfolio.css" />
     <style>
@@ -52,88 +62,65 @@
 
     <h2>Click an image below to learn more about the project.</h2>
 
-    <div id="portfolio-section">
-      <div id="portfolio-content" class="pad-content">
-        <div class="portfolio-row">
-          <div id="portfolio-church" class="portfolio-item">
-            <img
-              src="images/church/church_3d.png"
-              alt="3D render of a church"
-            />
-            <h3>Church</h3>
-          </div>
-          <div id="portfolio-lake-monticello" class="portfolio-item">
-            <img
-              src="images/lake_monticello/lake_monticello_overview.jpg"
-              alt="Overhead sketch of a house and yard"
-            />
-            <h3>Lake Monticello</h3>
+    <div class="carousel pad-content" id="portfolio-section">
+      <div>
+        <div class="portfolio-item">
+          <img src="images/church/church_3d.png" />
+          <div class="portfolio-details">
+            <h2>Church</h2>
+            <p>
+              This is an example of a description. It can be multiple sentences
+              long. This is the third sentence.
+            </p>
+            <button class="grey-button">View Project</button>
           </div>
         </div>
-        <div class="portfolio-details">
-          <div id="church-details" class="portfolio-detail">
-            <img
-              src="images/church/church_details.png"
-              alt="3D renders and labelled sketch of a church"
-            />
-            <img
-              src="images/church/church_side.png"
-              alt="3D renders of the side of a church"
-            />
-          </div>
-          <div id="lake-monticello-details" class="portfolio-detail">
-            <img
-              src="images/lake_monticello/lake_monticello_top.jpg"
-              alt="Labelled sketch of a house"
-            />
-            <img
-              src="images/lake_monticello/lake_monticello_backyard.jpg"
-              alt="Labelled sketch of a garden"
-            />
-          </div>
-        </div>
+      </div>
 
-        <div class="portfolio-row">
-          <div id="portfolio-park-st" class="portfolio-item">
-            <img
-              src="images/park_st/park_st_overview.jpg"
-              alt="Overhead sketch of a house and driveway"
-            />
-            <h3>Park Street</h3>
-          </div>
-          <div id="portfolio-key-west" class="portfolio-item">
-            <img
-              src="images/key_west/key_west_overview.jpg"
-              alt="3D render of a house"
-            />
-            <h3>Key West</h3>
+      <div>
+        <div class="portfolio-item">
+          <img src="images/key_west/key_west_overview.jpg" />
+          <div class="portfolio-details">
+            <h2>Key West</h2>
+            <p>
+              Let's pretend, for a minute, that this slide has a really long
+              description. Like, really really long. If, let's say, Patrick got
+              carried away with writing a description, how would it look? Would
+              it overflow its container? Would it look good on desktop but bad
+              on mobile? Let's find out.
+            </p>
+            <button class="grey-button">View Project</button>
           </div>
         </div>
-        <div class="portfolio-details">
-          <div id="park-st-details" class="portfolio-detail">
-            <img
-              src="images/park_st/park_st_backyard.jpg"
-              alt="Labelled sketch of a house and yard"
-            />
-            <img
-              src="images/park_st/park_st_driveway.jpg"
-              alt="Lebelled sketch of a driveway"
-            />
+      </div>
+
+      <div>
+        <div class="portfolio-item">
+          <img src="images/lake_monticello/lake_monticello_overview.jpg" />
+          <div class="portfolio-details">
+            <h2>Lake Monticello</h2>
+            <p>Short description.</p>
+            <button class="grey-button">View Project</button>
           </div>
-          <div id="key-west-details" class="portfolio-detail">
-            <img
-              src="images/key_west/key_west_top.jpg"
-              alt="Labelled sketch of a house"
-            />
-            <img
-              src="images/key_west/key_west_details.jpg"
-              alt="3D models of a house and yard"
-            />
+        </div>
+      </div>
+
+      <div>
+        <div class="portfolio-item">
+          <img src="images/park_st/park_st_overview.jpg" />
+          <div class="portfolio-details">
+            <h2>Park St</h2>
+            <button class="grey-button">View Project</button>
           </div>
         </div>
       </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"
+    ></script>
     <script src="javascript/portfolio.js"></script>
   </body>
 </html>

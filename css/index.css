@@ -218,6 +218,16 @@
   #about-second-row {
     margin-left: 5px;
     margin-right: 5px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #about-interests {
+    margin-right: 10px;
+  }
+
+  #about-portfolio {
+    margin-left: 10px;
   }
 
   /* SLIDESHOW SECTION */
@@ -240,5 +250,21 @@
 
   .slideshow-text {
     flex: 1;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #about-second-row {
+    margin-left: 5px;
+    margin-right: 5px;
+    flex-direction: column;
+  }
+
+  #about-interests {
+    margin-right: 0;
+  }
+
+  #about-portfolio {
+    margin-left: 0;
   }
 }
