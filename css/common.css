@@ -147,12 +147,13 @@ hr {
 
 .grey-button {
   border-radius: 8px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
   background-color: #66666680;
   color: white;
+  text-decoration: none;
   border: 1px #777777 solid;
   cursor: pointer;
 }

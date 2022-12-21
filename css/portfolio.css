@@ -28,6 +28,9 @@ h2 {
   width: min(90%, 1400px);
 }
 
+#portfolio-section {
+}
+
 @media only screen and (max-width: 800px) {
   .portfolio-item {
     flex-direction: column;
