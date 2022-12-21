@@ -94,7 +94,7 @@
 /* SLIDESHOW SECTION */
 
 .carousel {
-  margin: 5px auto;
+  margin: 15px auto;
   margin-top: 0;
   padding-left: 20px;
   padding-right: 20px;
@@ -231,5 +231,10 @@
 
   #about-portfolio {
     margin-left: 0;
+  }
+
+  .slideshow-content {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

@@ -28,12 +28,6 @@ h2 {
   width: min(90%, 1400px);
 }
 
-.slick-prev:before,
-.slick-next:before {
-  color: #333333;
-  font-size: clamp(16pt, 4vw, 30pt);
-}
-
 @media only screen and (max-width: 800px) {
   .portfolio-item {
     flex-direction: column;
