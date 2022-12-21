@@ -1,0 +1,19 @@
+.project-content {
+  text-align: center;
+}
+
+.project-media {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-media > img {
+  max-width: clamp(400px, 40vw, 600px);
+  height: auto;
+  transition: transform 0.4s;
+  -webkit-transition: transform 0.4s;
+  -moz-transition: transform 0.4s;
+  -ms-transition: transform 0.4s;
+  -o-transition: transform 0.4s;
+}
