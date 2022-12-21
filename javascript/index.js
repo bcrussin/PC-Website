@@ -1,4 +1,8 @@
-let aboutSlides = document.getElementsByClassName("slideshow-content");
+$(document).ready(function () {
+  $(".carousel").slick({});
+});
+
+/*let aboutSlides = document.getElementsByClassName("slideshow-content");
 let currSlide = 0;
 
 for (let i = 0; i < aboutSlides.length; i++) {
@@ -27,3 +31,4 @@ function prevSlide() {
 
   aboutSlides[currSlide].style.display = "flex";
 }
+*/
