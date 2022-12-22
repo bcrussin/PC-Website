@@ -37,6 +37,10 @@ h2 {
     flex-direction: column;
   }
 
+  .portfolio-item img {
+    width: 100%;
+  }
+
   .carousel {
     width: 80%;
   }
