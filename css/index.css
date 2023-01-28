@@ -14,8 +14,8 @@
 }
 
 #about-section img {
-  width: min(180px, 20vw);
-  height: min(180px, 20vw);
+  width: clamp(110px, 20vw, 200px);
+  height: clamp(110px, 20vw, 200px);
   object-fit: cover;
   position: relative;
   border-radius: 50%;
@@ -102,7 +102,7 @@
 }
 
 .slideshow-section {
-  background-color: #242424;
+  background-color: #2a2a2a;
 }
 
 #slideshow {

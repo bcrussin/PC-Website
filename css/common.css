@@ -57,7 +57,7 @@ hr {
   font-family: "EB Garamond", serif;
   font-weight: 500;
 }
-
+/*
 .navbar-button::before {
   display: block;
   content: attr(title);
@@ -67,7 +67,7 @@ hr {
   visibility: visible;
   background-color: red;
 }
-
+*/
 .navbar-button {
   padding-right: 5px;
   padding-top: 5px;
@@ -168,4 +168,90 @@ hr {
 
 .spacer {
   height: 80px;
+}
+
+@media only screen and (max-width: 800px) {
+  /* MOBILE NAV */
+  .nav-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15px;
+    width: 22px;
+  }
+
+  .nav-toggle .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    transition: all 100ms ease-in-out;
+  }
+
+  .x:nth-of-type(1) {
+    transition: all 100ms ease-in-out;
+    transform: rotate(31deg);
+    transform-origin: top left;
+    width: 25px;
+    -webkit-transform: rotate(31deg);
+    -moz-transform: rotate(31deg);
+    -ms-transform: rotate(31deg);
+    -o-transform: rotate(31deg);
+  }
+
+  .x:nth-of-type(2) {
+    transition: all 100ms ease-in-out;
+    transform-origin: center;
+    width: 0;
+  }
+
+  .x:nth-of-type(3) {
+    transition: all 100ms ease-in-out;
+    transform: rotate(-31deg);
+    transform-origin: bottom left;
+    width: 25px;
+    -webkit-transform: rotate(-31deg);
+    -moz-transform: rotate(-31deg);
+    -ms-transform: rotate(-31deg);
+    -o-transform: rotate(-31deg);
+  }
+
+  #nav-buttons {
+    visibility: collapse;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+  }
+
+  #nav-section {
+    margin-bottom: 60px;
+  }
+
+  #navbar {
+    height: 60px;
+  }
+
+  .navbar-button {
+    font-size: larger;
+    height: 10%;
+  }
+
+  #logo {
+    height: 50px;
+  }
+
+  #title {
+    font-size: 1.5em;
+  }
 }
